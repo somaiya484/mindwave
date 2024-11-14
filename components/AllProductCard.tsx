@@ -1,11 +1,21 @@
 import Link from 'next/link';
-import { products } from '../data/products';
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
+type Product = {
+  _id: string;
+  image: string;
+  title: string;
+  productabibility: string;
+  discountRate: number;
+  currency: string;
+  currentPrice: number;
+  stars: number;
+};
 
 type ProductCardProps = {
   product: Product;
 };
+
 
 const AllProductCard: React.FC<ProductCardProps> = ({ product }) => (
   <div className="bg-white shadow rounded p-4 w-full relative">
