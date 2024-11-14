@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Product } from '../data/products';
+import { products } from '../data/products';
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 

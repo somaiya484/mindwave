@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    serverActions: true,
-    serverComponentsExternalPackages: ['mongoose']
+    serverActions: false,
+    serverComponentsExternalPackages: false,
   },
   images: {
     domains: ['m.media-amazon.com']
