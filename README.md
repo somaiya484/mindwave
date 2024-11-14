@@ -1,8 +1,8 @@
 About MindHive
 
-<div align="center">
+<div>
   <br />
-      <img src="https://ibb.co.com/1rJ4Dvv" alt="Project Banner">
+      <img src="./public/assets/images/gitbanner.png" alt="Project Banner">
     </a>
   <br />
 
@@ -31,3 +31,5 @@ About MindHive
 - Tailwind CSS
 - React Icon
 - Swiper slider
+
+</div>
