@@ -1,7 +1,17 @@
 import Link from 'next/link';
-import { Product } from '../data/products';
+import { products } from '../data/products';
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
+export type Product = {
+  _id: string;
+  image: string;
+  title: string;
+  productabibility: string;
+  discountRate: number;
+  currency: string;
+  currentPrice: number;
+  stars: number;
+};
 
 type ProductCardProps = {
   product: Product;
@@ -29,9 +39,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
         <span className="text-xl font-bold mr-1">
           {product.currency} {product.currentPrice.toFixed(2)}
         </span>
-        {/* <span className="line-through text-gray-400 text-xs">
-          {product.currency} {product.originalPrice.toFixed(2)}
-        </span> */}
       </div>
 
       <div>
@@ -45,9 +52,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
         <Link
           href={`/products/${product._id}`}
           className="text-[#1c719f] hover:underline block text-xs mt-2 flex items-center gap-1"
-        >
-          See Details <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare>
-        </Link>
+        >See Details <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></Link>
       </div>
     </div>
 

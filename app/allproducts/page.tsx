@@ -1,5 +1,4 @@
 import AllProductList from "@/components/AllProductList";
-import { FaArrowRight } from "react-icons/fa";
 
 
 const page = () => {

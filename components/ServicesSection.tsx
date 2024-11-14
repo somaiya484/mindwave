@@ -1,4 +1,3 @@
-// 'use client'
 import React from 'react';
 import { FaShippingFast, FaUndo, FaGift, FaCheckCircle } from 'react-icons/fa';
 

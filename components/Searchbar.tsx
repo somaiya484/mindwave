@@ -69,3 +69,7 @@ const Searchbar = () => {
 }
 
 export default Searchbar
+
+function scrapeAndStoreProduct(searchPrompt: string) {
+  throw new Error('Function not implemented.');
+}

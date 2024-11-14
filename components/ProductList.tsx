@@ -1,4 +1,3 @@
-// components/ProductList.tsx
 import React from 'react';
 import { products } from '../data/products';
 import ProductCard from './ProductCard';
